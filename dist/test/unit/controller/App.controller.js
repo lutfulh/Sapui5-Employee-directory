@@ -1,0 +1,1 @@
+sap.ui.define(["sap/employeeList/Employees/controller/App.controller"],function(e){"use strict";QUnit.module("App Controller");QUnit.test("I should test the App controller",function(t){var o=new e;o.onInit();t.ok(o)})});

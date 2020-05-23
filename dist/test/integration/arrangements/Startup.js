@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/test/Opa5"],function(t){"use strict";return t.extend("sap.employeeList.Employees.test.integration.arrangements.Startup",{iStartMyApp:function(t){var e=t||{};e.delay=e.delay||50;this.iStartMyUIComponent({componentConfig:{name:"sap.employeeList.Employees",async:true},hash:e.hash,autoWait:e.autoWait})}})});

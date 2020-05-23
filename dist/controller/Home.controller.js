@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(e){"use strict";return e.extend("sap.employeeList.Employees.controller.Home",{onInit:function(){},onListItemPress:function(e){var o=e.getSource();var t=sap.ui.core.UIComponent.getRouterFor(this);t.navTo("detail",{employeePath:window.encodeURIComponent(o.getBindingContext("employee").getPath().substr(1))})}})});
