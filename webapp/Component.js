@@ -26,7 +26,8 @@ sap.ui.define([
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
-
+			
+            //get data from model
 			var model = new JSONModel("model/EmployeeData.json");
 			this.setModel(model, "employee");
 		}

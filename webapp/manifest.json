@@ -73,7 +73,10 @@
 				"viewPath": "sap.employeeList.Employees.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
-				"clearControlAggregation": false
+				"clearControlAggregation": false,
+				"bypassed": {
+					"target":"targetInvalid"
+				}
 			},
 			"routes": [
 				{
@@ -95,6 +98,10 @@
 				"detail": {
 					"viewID": "detail",
 					"viewName": "Detail"
+				},
+				"targetInvalid": {
+					"viewName": "NotFound",
+					"transition": "show"
 				}
 			}
 		}

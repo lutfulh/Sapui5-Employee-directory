@@ -10,12 +10,14 @@ sap.ui.define([
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.getRoute("detail").attachPatternMatched(this._onObjectMatched, this);
 		},
+		//checking if route path is matched
 		_onObjectMatched: function (oEvent) {
 			this.getView().bindElement({
 				path: "/" + window.decodeURIComponent(oEvent.getParameter("arguments").employeePath),
 				model: "employee"
 			});
 		},
+		// Going back to home when back button is pressed
 		onNavBack: function () {
 			var router = this.getOwnerComponent().getRouter();
 			router.navTo("home",[],true);
